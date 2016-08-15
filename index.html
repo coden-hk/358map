@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link type="text/css" rel="stylesheet" href="css/Style.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="LeftBody">
+			<iframe id="IMapFrame" style="width: 75%;position: fixed;height: 100%;z-index: 100000;background-color: #222222;transition: top 300ms ease-in-out;top: 1000px;border: none;" src="PCAbroad.html"></iframe>
+			<div id="MyWaitingNote">
+				Loading......
+			</div>
+			<div id="MyMapWidth">
+				<div id="PartDB" class="MyPartItem">
+					<div id="PartDBCircleListBorder" class="PartNoteCircle" style="z-index:22">
+						<div id="PartDBListBorder" class="PartLightCircle" style="z-index:23"><p id="PartText" class="CircleText">东北</p></div>
+					</div>
+					<div id="PartDBNoteListBorder" class="PartNoteListTopBorder" style="z-index:20"></div>
+					<div id="PartDBNoteList" class="PartNoteList" style="z-index:21">
+					</div>
+					<div class="PartNoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+				
+				<div id="PartHB" class="MyPartItem">
+					<div id="PartHBCircleListBorder" class="PartNoteCircle" style="z-index:22">
+						<div id="PartHBListBorder" class="PartLightCircle" style="z-index:23"><p id="PartText" class="CircleText">华北</p></div>
+					</div>
+					<div id="PartHBNoteListBorder" class="PartNoteListTopBorder" style="z-index:20"></div>
+					<div id="PartHBNoteList" class="PartNoteList" style="z-index:21">
+					</div>
+					<div class="PartNoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+				
+				<div id="PartHD" class="MyPartItem">
+					<div id="PartHDCircleListBorder" class="PartNoteCircle" style="z-index:22">
+						<div id="PartHDListBorder" class="PartLightCircle" style="z-index:23"><p id="PartText" class="CircleText">华东</p></div>
+					</div>
+					<div id="PartHDNoteListBorder" class="PartNoteListTopBorder" style="z-index:20"></div>
+					<div id="PartHDNoteList" class="PartNoteList" style="z-index:21">
+					</div>
+					<div class="PartNoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+				
+				<div id="PartHN" class="MyPartItem">
+					<div id="PartHNCircleListBorder" class="PartNoteCircle" style="z-index:22">
+						<div id="PartHNListBorder" class="PartLightCircle" style="z-index:23"><p id="PartText" class="CircleText">华南</p></div>
+					</div>
+					<div id="PartHNNoteListBorder" class="PartNoteListTopBorder" style="z-index:20"></div>
+					<div id="PartHNNoteList" class="PartNoteList" style="z-index:21">
+					</div>
+					<div class="PartNoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	
+				<div id="PartZB" class="MyPartItem">
+					<div id="PartZBCircleListBorder" class="PartNoteCircle" style="z-index:22">
+						<div id="PartZBListBorder" class="PartLightCircle" style="z-index:23"><p id="PartText" class="CircleText">中部</p></div>
+					</div>
+					<div id="PartZBNoteListBorder" class="PartNoteListTopBorder" style="z-index:20"></div>
+					<div id="PartZBNoteList" class="PartNoteList" style="z-index:21">
+					</div>
+					<div class="PartNoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+				
+				<div id="0" class="MyPronviceItem">
+					<div id="HLJCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="HLJListBorder" class="LightCircle" style="z-index:23"><p id="HLJText" class="CircleText">黑</p></div>
+					</div>
+					<div id="HLJNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="HLJNoteList" class="NoteList" style="z-index:21">
+						<ul id="HLJNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">张馨文</p>
+								<p class="MyListSchool">哈尔滨工业大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	            <div id="16" class="MyPronviceItem"><!--重庆-->
+					<div id="CQCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="CQListBorder" class="LightCircle" style="z-index:23"><p id="CQText" class="CircleText">渝</p></div>
+					</div>
+					<div id="CQNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="CQNoteList" class="NoteList" style="z-index:21">
+						<ul id="CQNoteListText" style="display: none;">
+							<li class="MyDoubleListLi" style="width: 100%;">
+								<p class="MyListTitle" style="margin-top: 25px;width: 100%;">王婧妍</p>
+								<p class="MyListSchool" style="width: 100%;">重庆师范大学涉外商贸学院</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	            <div id="2" class="MyPronviceItem"><!--广东-->
+					<div id="GDCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="GDListBorder" class="LightCircle" style="z-index:23"><p id="GDText" class="CircleText">粤</p></div>
+					</div>
+					<div id="GDNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="GDNoteList" class="NoteList" style="z-index:21">
+						<ul id="GDNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">李宗昊</p>
+								<p class="MyListSchool">广东工业大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+				
+	            <div id="3" class="MyPronviceItem"><!--山西-->
+					<div id="SX1CircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="SX1ListBorder" class="LightCircle" style="z-index:23"><p id="SX1Text" class="CircleText">晋</p></div>
+					</div>
+					<div id="SX1NoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="SX1NoteList" class="NoteList" style="z-index:21">
+						<ul id="SX1NoteListText" style="display: none;">
+							<li class="MyDoubleListLi"  style="width: 90%;">
+								<p class="MyListTitle" style="margin-top: 25px;">杨眉 原媛 常振 常婧 谷金晔</p>
+								<p class="MyListSchool">太原理工大学</p>
+							</li>
+							<li class="MyDoubleListLi"  style="width: 90%;">
+								<p class="MyListTitle">闫宇 池晨光 畅洵达 王宇坤 辛瑞雯</p>
+								<p class="MyListSchool">回炉重造学院</p>
+							</li>
+							<li class="MyDoubleListLi" >
+								<p class="MyListTitle">董泽龙</p>
+								<p class="MyListSchool">山西大学</p>
+							</li>
+							<li class="MyDoubleListLi" >
+								<p class="MyListTitle">任旭</p>
+								<p class="MyListSchool">山西师范大学</p>
+							</li>
+							<li class="MyDoubleListLi"> 
+								<p class="MyListTitle">袁约瑟</p>
+								<p class="MyListSchool">山西医科大学</p>
+							</li>
+							<li class="MyDoubleListLi"> 
+								<p class="MyListTitle">贺子婷</p>
+								<p class="MyListSchool">山西大学商务学院</p>
+							</li>
+							<li class="MyDoubleListLi" style="width: 100%;"> 
+								<p class="MyListTitle">王昭华</p>
+								<p class="MyListSchool" style="width: 100%;">山西医科大学汾阳学院</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	            <div id="4" class="MyPronviceItem"><!--天津-->
+					<div id="TJCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="TJListBorder" class="LightCircle" style="z-index:23"><p id="TJText" class="CircleText">津</p></div>
+					</div>
+					<div id="TJNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="TJNoteList" class="NoteList" style="z-index:21">
+						<ul id="TJNoteListText" style="display: none;">
+							<li class="MyDoubleListLi" style="width: 34%;">
+								<p class="MyListTitle" style="margin-top: 25px;">田梓青</p>
+								<p class="MyListSchool">天津大学</p>
+							</li>
+							<li class="MyDoubleListLi" style="margin-left: 0;width: 55%;">
+								<p class="MyListTitle" style="margin-top: 25px;">高亚琼 李浩然</p>
+								<p class="MyListSchool">天津理工大学</p>
+							</li>
+							<li class="MyDoubleListLi" style="width: 34%;">
+								<p class="MyListTitle">赵一勤</p>
+								<p class="MyListSchool">天津师范大学</p>
+							</li>
+							<li class="MyDoubleListLi" style="margin-left: 0;width: 55%;">
+								<p class="MyListTitle">陈昭文</p>
+								<p class="MyListSchool">天津外国语大学滨海学院</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	            <div id="5" class="MyPronviceItem"><!--北京-->
+					<div id="BJCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="BJListBorder" class="LightCircle" style="z-index:23"><p id="BJText" class="CircleText">京</p></div>
+					</div>
+					<div id="BJNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="BJNoteList" class="NoteList" style="z-index:21">
+						<ul id="BJNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">梁辰 文宇</p>
+								<p class="MyListSchool">北邮宏福校区</p>
+							</li>
+							<li class="MyDoubleListLi"  style="margin-left: 0;width: 50%;">
+								<p class="MyListTitle" style="margin-top: 25px;">张卓越 李孟頔</p>
+								<p class="MyListSchool">北京体育大学</p>
+							</li>
+							<li class="MyDoubleListLi" >
+								<p class="MyListTitle">范文锋 贾凡</p>
+								<p class="MyListSchool">北京化工大学</p>
+							</li>
+							<li class="MyDoubleListLi"  style="margin-left: 0;">
+								<p class="MyListTitle">王如歌</p>
+								<p class="MyListSchool">北京中医药大学</p>
+							</li>
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle">李璇 刘冉</p>
+								<p class="MyListSchool">北京师范大学</p>
+							</li><li class="MyDoubleListLi"  style="margin-left: 0;">
+								<p class="MyListTitle">李丁</p>
+								<p class="MyListSchool">中央音乐学院</p>
+							</li><li class="MyDoubleListLi">
+								<p class="MyListTitle">杨一凡</p>
+								<p class="MyListSchool">北京交通大学</p>
+							</li><li class="MyDoubleListLi"  style="margin-left: 0;">
+								<p class="MyListTitle">张轶弛</p>
+								<p class="MyListSchool">中国传媒大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+				
+	            <div id="15" class="MyPronviceItem"><!--上海-->
+					<div id="SHCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="SHListBorder" class="LightCircle" style="z-index:23"><p id="SHText" class="CircleText">沪</p></div>
+					</div>
+					<div id="SHNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="SHNoteList" class="NoteList" style="z-index:21">
+						<ul id="SHNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">崔冠然</p>
+								<p class="MyListSchool">上海师范大学</p>
+							</li>
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">张凯煜</p>
+								<p class="MyListSchool">上海对外经贸大学</p>
+							</li>
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle">宁一舟</p>
+								<p class="MyListSchool">东华大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+				
+	            <div id="8" class="MyPronviceItem"><!--江苏-->
+					<div id="JSCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="JSListBorder" class="LightCircle" style="z-index:23"><p id="JSText" class="CircleText">苏</p></div>
+					</div>
+					<div id="JSNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="JSNoteList" class="NoteList" style="z-index:21">
+						<ul id="JSNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">沈珂羽</p>
+								<p class="MyListSchool">中国矿业大学</p>
+							</li>
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">师瑞</p>
+								<p class="MyListSchool">江南大学</p>
+							</li>
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle">梁裕文</p>
+								<p class="MyListSchool">南京邮电大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+				
+	            <div id="1" class="MyPronviceItem">
+					<div id="FJCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="FJListBorder" class="LightCircle" style="z-index:23"><p id="FJText" class="CircleText">闽</p></div>
+					</div>
+					<div id="FJNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="FJNoteList" class="NoteList" style="z-index:21">
+						<ul id="FJNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">赖一夫</p>
+								<p class="MyListSchool">泉州师范大学</p>
+							</li>
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">武奥军</p>
+								<p class="MyListSchool">福州大学</p>
+							</li>
+						</ul>
+						
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+				
+	            <div id="7" class="MyPronviceItem"><!--四川-->
+					<div id="SCCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="SCListBorder" class="LightCircle" style="z-index:23"><p id="SCText" class="CircleText">川</p></div>
+					</div>
+					<div id="SCNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="SCNoteList" class="NoteList" style="z-index:21">
+						<ul id="SCNoteListText" style="display: none;">
+							<li class="MyDoubleListLi" style="width: 50%;">
+								<p class="MyListTitle" style="margin-top: 25px;">刘澍泽 乔治超</p>
+								<p class="MyListSchool">西南交通大学</p>
+							</li>
+							<li class="MyDoubleListLi" style="margin-left: 0;">
+								<p class="MyListTitle" style="margin-top: 25px;">刘林 李文婧</p>
+								<p class="MyListSchool">四川大学</p>
+							</li>
+							<li class="MyDoubleListLi" style="width: 50%;">
+								<p class="MyListTitle">张英博</p>
+								<p class="MyListSchool">西南财经大学</p>
+							</li><li class="MyDoubleListLi" style="margin-left: 0;">
+								<p class="MyListTitle">周秉锐</p>
+								<p class="MyListSchool">成都理工大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/>
+					</div>
+				</div>
+	            <div id="6" class="MyPronviceItem"><!--浙江-->
+					<div id="ZJCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="ZJListBorder" class="LightCircle" style="z-index:23"><p id="ZJText" class="CircleText">浙</p></div>
+					</div>
+					<div id="ZJNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="ZJNoteList" class="NoteList" style="z-index:21">
+						<ul id="ZJNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">马乾程</p>
+								<p class="MyListSchool">宁波诺丁汉</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	            <div id="9" class="MyPronviceItem"><!--山东-->
+					<div id="SDCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="SDListBorder" class="LightCircle" style="z-index:23"><p id="SDText" class="CircleText">鲁</p></div>
+					</div>
+					<div id="SDNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="SDNoteList" class="NoteList" style="z-index:21">
+						<ul id="SDNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">史丁心</p>
+								<p class="MyListSchool">山东大学</p>
+							</li>
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">张晨琪</p>
+								<p class="MyListSchool">中国海洋大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	            <div id="10" class="MyPronviceItem"><!--辽宁-->
+					<div id="LNCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="LNListBorder" class="LightCircle" style="z-index:23"><p id="LNText" class="CircleText">辽</p></div>
+					</div>
+					<div id="LNNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="LNNoteList" class="NoteList" style="z-index:21">
+						<ul id="LNNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">王锐</p>
+								<p class="MyListSchool">东北财经大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	            <div id="11" class="MyPronviceItem"><!--陕西-->
+					<div id="SX2CircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="SX2ListBorder" class="LightCircle" style="z-index:23"><p id="SX2Text" class="CircleText">陕</p></div>
+					</div>
+					<div id="SX2NoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="SX2NoteList" class="NoteList" style="z-index:21">
+						<ul id="SX2NoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">高博煜</p>
+								<p class="MyListSchool">长安大学</p>
+							</li>
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">任美蓉</p>
+								<p class="MyListSchool">西北农林科技大学</p>
+							</li>
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle">段亭宇</p>
+								<p class="MyListSchool">西安电子科技大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	            <div id="12" class="MyPronviceItem"><!--澳门-->
+					<div id="AMCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="AMListBorder" class="LightCircle" style="z-index:23"><p id="AMText" class="CircleText">澳</p></div>
+					</div>
+					<div id="AMNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="AMNoteList" class="NoteList" style="z-index:21">
+						<ul id="AMNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">张智超</p>
+								<p class="MyListSchool">澳门科技大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+				
+	            <div id="13" class="MyPronviceItem"><!--湖北-->
+					<div id="HBCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="HBListBorder" class="LightCircle" style="z-index:23"><p id="HBText" class="CircleText">鄂</p></div>
+					</div>
+					<div id="HBNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="HBNoteList" class="NoteList" style="z-index:21">
+						<ul id="HBNoteListText" style="display: none;">
+							<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">王泽中</p>
+								<p class="MyListSchool">中国地质大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	            <div id="14" class="MyPronviceItem"><!--湖南-->
+					<div id="HNCircleListBorder" class="NoteCircle" style="z-index:22">
+						<div id="HNListBorder" class="LightCircle" style="z-index:23"><p id="HNText" class="CircleText">湘</p></div>
+					</div>
+					<div id="HNNoteListBorder" class="NoteListTopBorder" style="z-index:20"></div>
+					<div id="HNNoteList" class="NoteList" style="z-index:21">
+						<ul id="HNNoteListText" style="display: none;">
+						<li class="MyDoubleListLi">
+								<p class="MyListTitle" style="margin-top: 25px;">闫蕗宇</p>
+								<p class="MyListSchool">湖南省工业大学</p>
+							</li>
+						</ul>
+					</div>
+					<div class="NoteHold"><img src="img/Hold.png" style="width: 100%;"/></div>
+				</div>
+	
+			</div>
+			<div style="background-color: #1a1a1a;width: 100%;height: 100%;">
+			<div id="MyPicLaylot" style="height: 100%;width: 100%;opacity: 0;">
+				<img id="ImgCQ" src="img/CQ.png" class="MyPronvice" style="z-index: 17;"/>
+               	<img id="ImgGD" src="img/GD.png" class="MyPronvice" style="z-index: 2;"/>
+               	<img id="ImgSX1" src="img/SX1.png" class="MyPronvice" style="z-index: 12;"/>	
+				<img id="ImgHLJ" src="img/HLJ.png" class="MyPronvice" style="z-index: 1;"/>
+                <img id="ImgBJ" src="img/BJ.png" class="MyPronvice" style="z-index: 4;"/>
+                <img id="ImgSC" src="img/SC.png" class="MyPronvice" style="z-index: 5;"/>
+                <img id="ImgTJ" src="img/TJ.png" class="MyPronvice" style="z-index: 6;"/>
+                <img id="ImgJS" src="img/JS.png" class="MyPronvice" style="z-index: 7;"/>
+                <img id="ImgSH" src="img/SH.png" class="MyPronvice" style="z-index: 8;"/>
+                <img id="ImgZJ" src="img/ZJ.png" class="MyPronvice" style="z-index: 9;"/>
+                <img id="ImgSD" src="img/SD.png" class="MyPronvice" style="z-index: 10;"/>
+                <img id="ImgLN" src="img/LN.png" class="MyPronvice" style="z-index: 11;"/>
+                <img id="ImgSX2" src="img/SX2.png" class="MyPronvice" style="z-index: 3;"/>
+                <img id="ImgFJ" src="img/FJ.png" class="MyPronvice" style="z-index: 14;"/>
+                <img id="ImgHB" src="img/HB.png" class="MyPronvice" style="z-index: 15;"/>
+                <img id="ImgHN" src="img/HN.png" class="MyPronvice" style="z-index: 16;"/><!--以上为引用的省份图片-->
+				<img id="MyMap" src="img/MAP.png"  style="height:100%;position: absolute;left: 0;right: 0;z-index: 0;margin: 0 auto;"/>
+			</div>
+		</div>
+		</div>
+		<div id="RightBody">
+			<div id="RightBorder">
+				<div id="MyLogo">
+					<img src="img/MyLogo.png"  style="width: 100%;"/>
+				</div>
+				<table id="MyButtons" border="1">
+					<tr>
+						<td id="ButtonDB" class="MyButton">东北</td>
+						<td id="ButtonHB" class="MyButton">华北</td>
+						<td id="ButtonZB" class="MyButton">中部</td>
+					</tr>
+					<tr>
+						<td id="ButtonHD" class="MyButton">华东</td>
+						<td id="ButtonHN" class="MyButton">华南</td>
+						<td id="ButtonAbroad" class="MyButton">海外</td>
+					</tr>
+				</table>
+				<div class="MyInstrucationBorder">
+					<p id="MyInstrucationTitle">使用说明</p>
+					<p class="MyInstrucation">1.在左侧地图或上方按钮中选择要查找的省份所在区域</p>
+					<p class="MyInstrucation">2.在弹出的省份中找到您想要的省份，之后点击省份上的标签，即可看到在该省份读书的同学。</p>
+					<p class="MyInstrucation">3.行政区域划分：</p>
+					<p class="MyInstrucation" style="margin-top: 0;">&emsp;东北：黑龙江、辽宁</p>
+					<p class="MyInstrucation" style="margin-top: 0;">&emsp;华北：北京、天津、山西</p>
+					<p class="MyInstrucation" style="margin-top: 0;">&emsp;中部 : 四川、陕西、湖南、湖北</p>
+					<p class="MyInstrucation" style="margin-top: 0;">&emsp;华东：山东、江苏、上海、浙江、福建</p>
+					<p class="MyInstrucation" style="margin-top: 0;">&emsp;华南 : 广东、澳门</p>
+					<p class="MyInstrucation" style="margin-top: 0;">&emsp;部分地区没有按标准行政区域划分。</p>
+				</div>
+				<div class="MyInstrucationBorder">
+					<p class="MyInstrucation">鸣谢&emsp;信息收集：宁一舟 <br/>&emsp;&emsp;&emsp;制作：王泽中 贾  凡 赵一勤<br/>&emsp;&emsp;&emsp;技术支持：小宇 图标制作：郝国立</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+<script language="JavaScript" src="js/jquery-2.1.4.min.js"></script>
+<script language="JavaScript" src="js/jquery.easing.1.3.js"></script>
+<script language="JavaScript" src="js/NotePosition.js"></script>
+<script language="JavaScript" src="js/RightControl.js"></script>
+<script language="JavaScript" src="js/PartClick.js"></script>

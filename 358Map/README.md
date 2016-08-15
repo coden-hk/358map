@@ -10,4 +10,3 @@ Coded by 北燕云翳,Picachu闪电 and Hawkins Zhao.
 Icon designed by Howard Hao
 Technical support by Almost blurred.
 Tested by many classmates in 358 class.
-
