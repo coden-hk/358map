@@ -1,7 +1,7 @@
 var MyProvinceListSet=[16]; //省份代码;横坐标;纵坐标;简称;全称;高度
 var j =30; 					//顶层层叠计数器
 MyProvinceListSet[0]='HLJ;0.82;0.215;黑;黑龙江;100;';
-MyProvinceListSet[1]='FJ;0.73;0.76;闽;福建;100';
+MyProvinceListSet[1]='FJ;0.73;0.76;闽;福建;160';
 MyProvinceListSet[2]='GD;0.695;0.81;粤;广东;100';
 MyProvinceListSet[3]='SX1;0.625;0.483;晋;山西;310';
 MyProvinceListSet[4]='TJ;0.7;0.44;津;天津;140';
@@ -9,7 +9,7 @@ MyProvinceListSet[5]='BJ;0.67;0.40;京;北京;240';
 MyProvinceListSet[6]='ZJ;0.75;0.69;浙;浙江;100';
 MyProvinceListSet[7]='SC;0.491;0.653;川;四川;140';
 MyProvinceListSet[8]='JS;0.738;0.572;苏;江苏;140';
-MyProvinceListSet[9]='SD;0.7;0.52;鲁;山东;100';
+MyProvinceListSet[9]='SD;0.7;0.52;鲁;山东;160';
 MyProvinceListSet[10]='LN;0.775;0.365;辽;辽宁;100';
 MyProvinceListSet[11]='SX2;0.58;0.54;陕;陕西;140';
 MyProvinceListSet[12]='AM;0.65;0.845;澳;澳门;100';
