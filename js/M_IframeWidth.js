@@ -11,7 +11,7 @@ var ZoomPercent = 0.6;
 var IsChina = true;
 
 var MyProvinceListSet=[17]; //省份代码;横坐标;纵坐标;简称;全称;高度
-MyProvinceListSet[0]='黑龙江;11.5;张馨文;哈尔滨工业大学;王宇坤;东北农林大学';
+MyProvinceListSet[0]='黑龙江;11.5;张馨文;哈尔滨工业大学;王雨坤;东北农林大学';
 MyProvinceListSet[1]='福建;13.5;赖一夫;泉州师范学院;武奥军;福州大学;闫宇;厦门大学';
 MyProvinceListSet[2]='广东;8.5;李宗昊;广东工业大学';
 MyProvinceListSet[3]='山西;26.5;袁约瑟 刘晨宇;山西医科大学;董泽龙;山西大学;任旭;山西师范大学;王昭华;山西医科大学<br/>汾阳学院;贺子婷;山西大学<br/>商务学院;原媛 常振 常婧<br/>杨眉 谷金晔<br/>辛瑞雯;太原理工大学';
@@ -20,7 +20,7 @@ MyProvinceListSet[5]='北京;25;梁辰 文宇;北邮宏福校区;张卓月 李�
 MyProvinceListSet[6]='浙江;8.5;马乾程;宁波诺丁汉';
 MyProvinceListSet[7]='四川;15;刘林 李文婧;四川大学;刘澍泽 乔治超;西南交通大学;张英博;西南财经大学;周秉锐;成都理工大学';
 MyProvinceListSet[8]='江苏;12.5;沈珂羽;中国矿业大学;师瑞;江南大学;梁裕文;南京邮电大学';
-MyProvinceListSet[9]='山东;14.5;史丁心;山东大学;张晨琪;中国海洋大学;畅洵达;哈尔滨工业大学<br/>威海校区';
+MyProvinceListSet[9]='山东;14.5;史丁心;山东大学;张晨琪;中国海洋大学;畅恂达;哈尔滨工业大学<br/>威海校区';
 MyProvinceListSet[10]='辽宁;8.5;王锐;东北财经大学';
 MyProvinceListSet[11]='陕西;17;高博煜;长安大学;任美蓉;西北农林科技大学;段亭宇;西安电子科技大学<br/>长安学院;池晨光;西安科技大学';
 MyProvinceListSet[12]='澳门;8.5;张智超;澳门科技大学';
@@ -155,7 +155,7 @@ document.getElementById("PartAbroad").onclick = function(){
 		IsChina= false;
 		document.getElementById("MoreMenu").click();
 	}
-	
+
 }
 //document.getElementById("ChoiceDB").onclick = function(){
 //	document.getElementById("MyFloatBlack").style.height ="0";
@@ -177,7 +177,7 @@ document.getElementById("PartAbroad").onclick = function(){
 //		$("div#FrameDiv").animate({scrollLeft: 0.58 * MapFrame.contentWindow.ReturenHeight(),scrollTop: 0.17 * MapFrame.contentWindow.ReturenWidth()},700,"easeOutQuart");
 //		MapFrame.contentWindow.ScrollPosition(2,0.25,1);
 //	}
-//	else 
+//	else
 //	{
 //		MapFrame.contentWindow.ScrollPosition(0.63,0.25,1);
 //	}
