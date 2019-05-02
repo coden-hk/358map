@@ -1,5 +1,5 @@
 # 358Map
-Here is the code of http://358map.coden.hk
+Here is the code of https://358map.hawkinscode.com
 
 # Licence
 You can use all this code to rebuild your own website, but you can not sell them or put them into any bussiness job.
